@@ -109,7 +109,7 @@ nav {
 #logo-box .logo {
   color: var(--darkwhite);
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #nav-links {
@@ -185,7 +185,7 @@ nav {
 /* Header */
 #header {
   background-color: #345960;
-  padding: 6rem 0;
+  padding: 0 6rem;
   padding-bottom: 100px;
   min-height: 100vh;
   display: -webkit-box;
@@ -235,12 +235,132 @@ nav {
 
   #header .container {
     flex-direction: column;
-    -webkit-box-direction: normal;
     padding-left: 10px;
+  }
+
+  #header .container .left {
+    padding-top: 10rem;
   }
 
   #header .container .right img {
     margin-top: 2rem;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 576px) {
+  #header .container .left {
+    padding-top: 0;
+  }
+}
+
+/* Photo */
+section {
+  background-color: var(--darkwhite);
+  text-align: center;
+}
+
+#section-a .container h2 {
+  padding-top: 2rem;
+  color: var(--darkgreen);
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+#section-a .container .members {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+}
+
+#section-a .container .members .member {
+  background-color: var(--darkgreen);
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#section-a .container .members .member .text {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: var(--darkwhite);
+  font-size: 2rem;
+}
+
+#section-a .container .members .member img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Haqqımızda */
+#section-b {
+  background-color: var(--darkwhite);
+  padding: 5rem 0;
+}
+
+#section-b .container h2 {
+  padding-top: 10rem;
+  color: var(--darkgreen);
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+#section-b .container .abouts .about {
+  margin-top: 3rem;
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  padding: 1rem;
+}
+
+#section-b .container .abouts h3 {
+  color: var(--darkgreen);
+  font-size: 2rem;
+  padding-left: 25px;
+}
+
+#section-b .container .abouts .about p {
+  border: 1px solid var(--darkgreen);
+  width: 200px;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  #section-b .container .abouts .about {
+    width: 100%;
+    padding-left: 175px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #section-b .container .abouts .about {
+    padding-left: 100px;
+  }
+}
+
+/* Əlaqə */
+#section-c {
+  background-color: var(--darkgreen);
+  background: linear-gradient(45deg, #337076, #34555d);
+  padding: 10rem 0;
+}
+
+#section-c .container h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  color: #e0dddd;
+}
+
+#section-c .container .text h3 {
+  color: var(--darkwhite);
 }
