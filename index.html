@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bacarıqlar - 8D</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container clearfix">
+        <div id="logo-box">
+          <a href="#" class="logo text-uppercase">Bacarıqlar</a>
+        </div>
+
+        <div id="nav-links" class="responsive">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-icon"
+                ><i class="fas fa-bars"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Ümumi</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Fotolar</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Haqqında</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Əlaqə</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="left">
+          <h1>Bacarıqlar - 8d Sinif Oğlanları Haqqında</h1>
+
+          <p>
+            Bu sayt 195 nömrəli tam orta məktəbin <br />
+            8D sinifinin oğlanlarının haqqında və bacarıqları üçün qurulub.
+          </p>
+        </div>
+
+        <div class="right">
+          <img src="img/195nomreli.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section id="section-a"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(".nav-icon").click(function () {
+        $("#nav-links").toggleClass("responsive");
+        return false;
+      });
+    </script>
+  </body>
+</html>
